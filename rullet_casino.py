@@ -16,16 +16,13 @@ def zero_return(attempts, value_to_check):
 
 
 if __name__ == "__main__":
-    print("Do you want to start press Y. If don't press any key: ")
-    repeat_confirm = input()
+    repeat_confirm = input("Do you want to start press Y. If don't press any key: ")
     while repeat_confirm == 'Y' or repeat_confirm == 'y':
         lucky_value = int(input("Input Lucky Value: "))
         lucky_attempts = int(input("Input attempts Amount: "))
-
         result_array = zero_return(lucky_attempts, lucky_value)
 
         attempts_counter = 0
-
         for i in result_array:
             attempts_counter += 1
             if i == 0:
